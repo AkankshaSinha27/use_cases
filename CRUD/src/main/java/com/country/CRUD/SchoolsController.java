@@ -18,7 +18,10 @@ public class SchoolsController {
 		ArrayList<SchoolsEntity> transformedvalues = new ArrayList<SchoolsEntity>();
 		for (SchoolsEntity emt : er.findAll()) {
 			SchoolsEntity temp = new SchoolsEntity();
-			temp.setStudent_name(emt.getStudent_name());
+			
+			
+			
+			temp.setStudent_name(emt.getStudent_name().substring(0,3));
 			
 			transformedvalues.add(temp);
 			
