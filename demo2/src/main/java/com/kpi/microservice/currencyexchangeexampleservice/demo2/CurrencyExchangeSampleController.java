@@ -16,6 +16,8 @@ import org.springframework.web.client.RestTemplate;
 public class CurrencyExchangeSampleController {
 
 	@Autowired
+	
+	
 
 	private ExchangeValueRepo ev;
 
