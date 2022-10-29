@@ -14,7 +14,9 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 public class CurrencyExchangeSampleController {
+	
 	@Autowired
+	
 	private ExchangeValueRepo ev;
 	
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
