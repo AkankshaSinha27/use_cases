@@ -14,17 +14,15 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 public class CurrencyExchangeSampleController {
-	
+
 	@Autowired
-	
+
 	private ExchangeValueRepo ev;
-	
+
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
-	public ExchangeValueEntity convertCurrency(@PathVariable String from,@PathVariable String to)  
-	{  
+	public ExchangeValueEntity convertCurrency(@PathVariable String from, @PathVariable String to) {
 		return ev.findByFromAndTo(from, to);
-		
-	}  
-	
-	
+
+	}
+
 }
